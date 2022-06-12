@@ -1,0 +1,42 @@
+/*3.10 Blog Div Style*/
+.blog{
+    background: #f9f9f9;
+}
+.blog-item{
+    width: 30%;
+    float: left;
+    background: #fff;
+}
+.blog-item.mg{
+    margin: 0 5%;
+}
+.blog-item-img img{
+    width: 100%;
+}
+.blog-item-list{
+    list-style: none;
+    margin: 10px 0;
+}
+.blog-item-list li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.blog-item-txt{
+    padding: 20px;
+}
+.blog-item-title{
+    font-weight: bold;
+    margin: 20px 0;
+
+}
+.blog-item-desc{
+    color: #999;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.blog-item-txt a{
+    text-transform: capitalize;
+    list-style: none;
+    color:#6195ff;
+}

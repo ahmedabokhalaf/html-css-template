@@ -1,0 +1,65 @@
+/*3.11 Contact Div Style*/
+.contact{
+    position: relative;
+}
+.contact-item{
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.contact-item-title{
+    font-weight: bold;
+    margin: 10px 0;
+}
+.contact-item-desc{
+    font-size: 17px;
+    color: #999;
+    line-height: 1.5;
+}
+.contact-item.mg{
+    margin: 0 5%;
+}
+form{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+}
+.name-email{
+    width: 100%;
+}
+.name, .email, .subject, .message{
+    float: left;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    border:none;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.name, .email{
+    float: left;
+}
+.name:hover, .email:hover{
+    border: 2px solid #6195ff;
+}
+.name{
+    width: 50%;
+}
+.email{
+    width:48%;
+    margin-left: 2%;
+}
+
+.subject, .message{
+    width: 100%;
+}
+.btn-submit{
+    width: 30%;
+    height: 50px;
+    background: #6195ff;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 5px;
+    color: #fff;
+}

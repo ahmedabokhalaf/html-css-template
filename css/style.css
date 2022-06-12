@@ -1,0 +1,217 @@
+/*
+    1- Common Style
+    2- General Style
+    3= Sections
+        3.0 Header Div style
+        3.1 Home Div Style 
+        3.2 Anout Div Style 
+        3.3 Portfolio Div Style 
+        3.4 Services Div Style 
+        3.5 Prices Div Style 
+        3.6 Team Div Style 
+        3.7 Blog Div Style 
+        3.8 Contact Div Style
+        3.9 Footer Div Style
+*/
+/* 1- Common Style*/
+    /*
+        - container
+        - overlay
+        - opacity hover
+        - section header
+        - section padding
+        - hover effect 1(left to right)
+        - hover effect 2(top to bottom)
+    */
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.hover-opacity{
+    transition: opacity 0.5s
+}
+
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+.ltr-effect,
+.ttb-effect {
+    position: relative;
+}
+
+.ltr-effect:after,
+.ttb-effect:after{
+    position: absolute;
+    content: "";    
+    background: #333;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.ltr-effect:after{
+    width: 0;
+    height: 100%;
+    transition: width 0.5s;
+}
+
+.ttb-effect:after{
+    width: 100%;
+    height: 0;
+    transition: height 0.5s;
+}
+
+.ltr-effect:hover:after{
+    width:100%;
+}
+
+.ttb-effect:hover:after{
+    height:100%;
+}
+/* 2- General Css Style */
+.container{
+    width: 80%;
+    margin: auto
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* css3 */
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: montserrat, sans-serif
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    font-family: inherit;
+}
+
+.pd-y{
+    padding: 100px;
+}
+
+.section-header{
+    text-align: center;
+}
+
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-header .line{
+    display: block;
+    height: 5px;
+    width: 60px;
+    background-color: #6195ff;
+    margin: 0 auto 70px auto;
+    
+}
+
+/*3.6 Member Div Style*/
+.members{
+    height: 300px;
+    position: relative;
+    background-image: url(../images/background/background2.webp);
+    padding: 100px 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.member-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.member-item-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.member-item-text{
+    color: #fff;
+}
+
+
+/*3.8 Testemonial Div Style*/
+.testemonial{
+    position: relative;
+    background-image: url(../images/background/background3.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+
+.testemonial-item{
+    padding: 120px 0;
+    width: 50%;
+    float: left;
+    color: #fff;
+}
+
+.testemonial-toplayer{
+    padding: 10px 2px 40px 100px;
+    position: relative;
+}
+
+.testemonial-toplayer img{
+    position:absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.testemonial-toplayer h2{
+    margin: 10px 0;
+}
+
+.testemonial-toplayer span{
+    color: #6195ff;
+}
+
+.testemonial-desc{
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
